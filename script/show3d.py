@@ -1,19 +1,21 @@
 from mayavi import mlab
-# import cv2
-#
-#
-# def main():
-#     # path='/home/vintinshaw/3Dcrack/data/RAND_CRACK/JPEGImages/genID-00000036-1_01162a.tif'
-#     path = 'dataPreview/12750_2022_03_08_10_49_14_GMS_01_001_10034_SICK_3D1_01015.tif'
-#
-#     img = cv2.imread(path, cv2.IMREAD_ANYDEPTH)
-#     mlab.surf(img)
-#     mlab.show()
-#     mlab.clf()
-#
-#
-# if __name__ == '__main__':
-#     main()
+import cv2
+
+
+def main():
+    # path='/home/vintinshaw/3Dcrack/data/RAND_CRACK/JPEGImages/genID-00000036-1_01162a.tif'
+    # path = '../dataPreview/12755_2022_03_08_14_15_07_GMS_01_001_10036_SICK_3D1_02120.tif'
+
+    path = '../dataPreview/genID-00000162-1_00717a.tif'
+
+    img = cv2.imread(path, cv2.IMREAD_ANYDEPTH)
+    mlab.surf(img)
+    mlab.show()
+    mlab.clf()
+
+
+if __name__ == '__main__':
+    main()
 
 # from numpy import pi, sin, cos, mgrid
 # dphi, dtheta = pi/250.0, pi/250.0
